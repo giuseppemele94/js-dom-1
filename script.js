@@ -13,6 +13,8 @@ bottone.addEventListener('click',
         // se il bottone ha la classe "acceso" accendo la lampadina
         if (bottone.classList.contains('acceso')) {
 
+           
+            bottone.classList.add("btn", "btn-success");
             //cambio l'immagine 
             foto.src = './img/yellow_lamp.png';
 
@@ -25,11 +27,12 @@ bottone.addEventListener('click',
         // se non ha la classe acceso deve spegnersi 
         else {
             
+            bottone.classList.remove("btn-success");
             foto.src = './img/white_lamp.png';
             bottone.innerHTML = "Accendi";
         }
     }
-); 
+);
 
 
 /* 2) Soluzione con includes 
