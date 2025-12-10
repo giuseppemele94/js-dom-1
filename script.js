@@ -32,3 +32,28 @@ bottone.addEventListener('click',
 ); 
 
 
+/* 2) Soluzione con includes 
+
+bottone.addEventListener("click",
+    function () {
+
+        //controllo il testo del bottone 
+        // se include accendi allora devo accendere 
+        
+        if (bottone.textContent.includes("Accendi")) {
+            //cambio l'immagine 
+            foto.src = './img/yellow_lamp.png';
+
+            //cambio l'alt 
+            foto.alt = 'lampada_accesa';
+
+            //cambio il testo del bottone 
+            bottone.textContent = "Spegni";
+        }
+        else {
+            foto.src = './img/white_lamp.png';
+            bottone.textContent = "Accendi";
+        }
+    }
+);
+*/
